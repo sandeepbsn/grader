@@ -1,0 +1,15 @@
+.action{
+    display:flex;   
+}
+
+.middle{
+    vertical-align: table;
+}
+
+@media (max-width: 550px){
+    .action{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

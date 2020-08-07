@@ -1,0 +1,28 @@
+.marklist{
+    width:50%;
+    border:1px solid rgba(216, 213, 213,0.5);
+}
+.reportcard{
+    width: 75%;
+}
+
+.bad{
+    border-right: 2px solid rgba(255,0,0,0.7) !important;
+}
+
+.average{
+    border-right: 2px solid rgba(0,0,255,0.7);
+}
+
+.good{
+    border-right: 2px solid rgba(0,255,0,0.7);
+}
+
+@media (max-width: 770px){
+    .marklist{
+        width:100%;
+    }
+    .reportcard{
+        width: 100%;
+    }
+}
