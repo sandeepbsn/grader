@@ -16,14 +16,14 @@ An application that helps the teachers to track and manages grades.
     4. Generate report card
 
 ### Add new admit
-<img src="/graderaddadmit.png" width="800" height="500" alt="admit"/>
+<img src="https://github.com/sandeepbsn/grader/blob/master/public/graderaddadmit.png" width="800" height="500" alt="admit"/>
 
 ### Add, edit and delete marks
-<img src="/graderupdatemarks.png" width="800" height="500" alt="admit"/>
+<img src="https://github.com/sandeepbsn/grader/blob/master/public/graderupdatemarks.png" width="800" height="500" alt="admit"/>
 
 ### Visualize data
-<img src="/gradercomparison.png" width="800" height="500" alt="admit"/>
+<img src="https://github.com/sandeepbsn/grader/blob/master/public/gradercomparison.png" width="800" height="500" alt="admit"/>
 
 ### Generate report card
-<img src="/graderreportscard.png" width="800" height="300" alt="admit"/>
+<img src="https://github.com/sandeepbsn/grader/blob/master/public/graderreportscard.png" width="800" height="300" alt="admit"/>
 
