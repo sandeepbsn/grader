@@ -3,12 +3,14 @@ from flask import request
 import os
 import csv
 import json
+from flask_cors import CORS
 from pkgs.student_list import *
 from pkgs.student_entry import *
 
 
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/addscores', methods=['GET'])
 def get_class_details():
