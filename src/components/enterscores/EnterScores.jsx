@@ -25,7 +25,7 @@ export default function EnterScores(){
     let percentage
     useEffect(()=>{
         const fetchData = async() => {
-            const studentDetails = await axios.get(`/addscores/${id}?grade=${grade}&&section=${section}&&exam=${exam}`)
+            const studentDetails = await axios.get(`${process.env.REACT_APP_BACKEND_HOST}/addscores/${id}?grade=${grade}&&section=${section}&&exam=${exam}`)
             setFetchedData(studentDetails.data[1])
             setMaxMarks(studentDetails.data[0])
             setCard(studentDetails.data[2])
@@ -45,7 +45,7 @@ export default function EnterScores(){
     }
 
     const handleUpdate = async() => {
-        const updateData  = await axios.patch(`/addscores/${id}?grade=${grade}&&section=${section}&&exam=${exam}`,{
+        const updateData  = await axios.patch(`${process.env.REACT_APP_BACKEND_HOST}/addscores/${id}?grade=${grade}&&section=${section}&&exam=${exam}`,{
             ...fetchedData,
         })
         setEditMode(!editMode)

@@ -45,7 +45,7 @@ export default function AddScores(){
         }
         
         const fetchData = async() => {
-            const classDetails = await axios.get(`/addscores?grade=${gradeUrl}&&section=${sectionUrl}&&exam=${examUrl}`)
+            const classDetails = await axios.get(`${process.env.REACT_APP_BACKEND_HOST}/addscores?grade=${gradeUrl}&&section=${sectionUrl}&&exam=${examUrl}`)
             setFetchedData(classDetails.data)
         }
 
@@ -63,7 +63,7 @@ export default function AddScores(){
     }
 
     const handleDelete = async(studid) => {
-        const removeEntity = await axios.delete(`/addscores/${studid}?grade=${gradeUrl}&&section=${sectionUrl}&&exam=${examUrl}`)
+        const removeEntity = await axios.delete(`${process.env.REACT_APP_BACKEND_HOST}/addscores/${studid}?grade=${gradeUrl}&&section=${sectionUrl}&&exam=${examUrl}`)
         const message = removeEntity.data.message
         alert(message)
         window.location.reload(false)

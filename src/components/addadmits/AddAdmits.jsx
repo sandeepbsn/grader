@@ -14,7 +14,7 @@ export default function Home(){
 
     useEffect(()=>{
         const fetchID = async() => {
-            const fetchedId = await axios.get("/addadmits")
+            const fetchedId = await axios.get(`${process.env.REACT_APP_BACKEND_HOST}/addadmits`)
             console.log(fetchedId)
             setStudent({
                 ...student,
@@ -33,7 +33,7 @@ export default function Home(){
 
     const handleSubmit = async(e) => {
         e.preventDefault()
-        const sendStudent = await(axios.post("/addadmits", {
+        const sendStudent = await(axios.post(`${process.env.REACT_APP_BACKEND_HOST}/addadmits`, {
             ...student,
         }))
 
